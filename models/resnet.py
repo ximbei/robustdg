@@ -2,7 +2,8 @@ import torch
 from torch import nn
 from torch.utils import model_zoo
 import torchvision
-from torchvision.models.resnet import BasicBlock, model_urls, Bottleneck
+# from torchvision.models.resnet import BasicBlock, model_urls, Bottleneck
+from torchvision.models.resnet import BasicBlock, Bottleneck
 import os
 
 class GroupNorm(torch.nn.GroupNorm):
