@@ -72,7 +72,7 @@ def get_data(num_samples, spur_corr, slab_noise, total_slabs, data_case, seed, m
 #                      corrupt_lin_margin=c['corrupt_lin_margin'], num_lin=c['num_lin'], num_slabs=c['num_slabs3']+c['num_slabs']+c['num_slabs7'], width=c['width'], bs=c['bs'], corrupt_lin=c['corrupt_lin'], corrupt_slab=c['corrupt_slab'], corrupt_slab7=c['corrupt_slab7'])            
     
     #Load data from json file
-    base_dir= '/home/t-dimaha/RobustDG/robustdg/data/datasets/slab/'
+    base_dir= '/content/sample_data/robustdg/data/datasets/slab/'
     data_dir= base_dir + 'total_slabs_' + str(total_slabs) + '_slab_noise_' + str(slab_noise) + '_spur_corr_' + str(spur_corr) + '_case_' + str(data_case) + '_seed_' + str(seed)
     
     with open(data_dir + '.pickle', 'rb') as handle:
